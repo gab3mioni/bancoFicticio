@@ -1,0 +1,15 @@
+.bg-pink {
+    background-color: #f78da7;
+}
+
+.btn-outline-yellow {
+    color: #e1e727;
+    background-color: #ffffff;
+    border-color: #e1e727;
+}
+
+.btn-outline-yellow:hover {
+    color: #000000;
+    background-color: #ffff00;
+    border-color: #ffff00;
+}
