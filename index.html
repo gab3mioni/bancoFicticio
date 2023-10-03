@@ -7,49 +7,62 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Banco Fictício</title>
+    <title>Banco Loreninter</title>
 </head>
 <body>
 
+  <!-- header -->
     <header>
 
-              <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
 
-                  <div class="ms-md-5">
-                    <figure>
-                      <img src="https://picsum.photos/50/50?random=1" alt="logoheader" class="img-fluid rounded-circle ms-5 mt-3 me-3">
-                    </figure>
-                  </div>
+              <div class="ms-md-5">
+                <figure class="ms-md-3">
+                  <img src="https://picsum.photos/50/50?random=1" alt="logoheader" class="img-fluid rounded-circle ms-md-5 mt-md-3 me-md-3">
+                </figure>
+              </div>
 
-                  <a class="navbar-brand" href="#">Banco Fictício</a>
+              <a class="navbar-brand" href="#">Banco Loreninter</a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                      <button class="btn btn-outline-yellow" type="submit">Pesquisar</button>
-                    </form>
+              <div class="collapse navbar-collapse" id="navbarScroll">
 
-                    <li class="nav-item dropdown list-unstyled mx-lg-5 mt-md-2">
-                      <a class="nav-link dropdown-toggle mx-lg-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Acesse sua Conta
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Pessoa Física</a></li>
-                        <li><a class="dropdown-item" href="#">Pessoa Jurídica</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Funcionário</a></li>
-                      </ul>
-                    </li>
+                <div class="d-flex d-md-none justify-content-center">
+                  <div class="mt-3">
+                    <button class="btn btn-outline-warning" type="submit">ACESSAR CONTA</button>
                   </div>
                 </div>
-              </nav>
+
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-none d-md-block" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ACESSE SUA CONTA
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Pessoa Física</a></li>
+                      <li><a class="dropdown-item" href="#">Pesso Jurídica</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Restrito</a></li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <form class="d-none d-md-flex me-5" role="search">
+                  <input class="form-control me-3" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                  <button class="btn btn-outline-warning me-lg-5" type="submit">Pesquisar</button>
+                </form>
+
+              </div>
             </div>
           </nav>
 
         </header>
+
+        <!-- carrosel de imagens -->
 
           <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -76,8 +89,10 @@
     <main class="container">
       <section class="row">
 
-        <div class="col-md-6 mt-md-5 bg-primary shadow rounded text-light">
-          <div class="p-5">
+        <!-- conta corrente -->
+        
+        <div class="col-md-6 mt-md-5 mt-5">
+          <div class="p-5 bg-primary shadow rounded text-light">
             <h2>Conta Corrente FC</h2>
 
             <p>Completa e com abertura 100% digital.</p>
@@ -86,8 +101,10 @@
           </div>
         </div>
 
-        <div class="col-md-5 ms-md-auto mt-md-5 bg-pink  shadow rounded text-light">
-          <div class="p-5">
+        <!-- cartão de crédito -->
+
+        <div class="col-md-5 ms-md-auto mt-md-5 mt-5">
+          <div class="p-5 bg-pink shadow rounded text-light">
             <h2>Cartão de Crédito</h2>
 
             <p>Aproveite as vantagens de ter um Pinkcard.</p>
@@ -96,8 +113,10 @@
           </div>
         </div>
 
-        <div class="col-md-3 mt-md-4 border shadow rounded">
-          <div class="p-5">
+        <!-- empréstimo -->
+        
+        <div class="col-lg-4 mt-md-4 mt-4">
+          <div class="p-5 border shadow rounded">
             <h2 class="text-primary fw-bolder">Empréstimo</h2>
 
             <p>Clientes tem linhas de crédito com condições diferenciadas de pagamento.</p>
@@ -106,8 +125,10 @@
           </div>
         </div>
 
-        <div class="col-md-3 mt-md-4 mx-auto border shadow rounded">
-          <div class="p-5">
+        <!-- investimentos -->
+
+        <div class="col-lg-4 mt-md-4 mx-auto mt-4">
+          <div class="p-5 border shadow rounded">
             <h2 class="text-primary fw-bolder">Investimentos</h2>
 
             <p>Invista em seus sonhos, do seu jeito, com zero complicação.</p>
@@ -116,8 +137,10 @@
           </div>
         </div>
 
-        <div class="col-md-3 mt-md-4 border shadow rounded">
-          <div class="p-5">
+        <!-- shopping -->
+
+        <div class="col-lg-4 mt-md-4 mt-4">
+          <div class="p-5 border shadow rounded">
             <h2 class="text-primary fw-bolder">Shopping</h2>
 
             <p>Clientes tem linhas de crédito com condições diferenciadas de pagamento.</p>
@@ -126,8 +149,10 @@
           </div>
         </div>
 
-        <div class="col-md-12 mt-md-5 bg-primary shadow rounded text-light">
-          <div class="p-5">
+        <!-- aplicativo-->
+
+        <div class="col-md-12 mt-md-5 mt-4">
+          <div class="p-5 bg-primary shadow rounded text-light">
             <h2>Quer receber cashback e se proteger de golpes?</h2>
 
             <p>Instale o aplicativo do Banco Ficticio para receber avisos de ameaças, de oportunidades e descontos na web.</p>
@@ -140,7 +165,7 @@
 
     <footer class="bg-warning">
       <section class="container">
-        <div class="col-12 mt-md-5 p-4">
+        <div class="col-12 mt-md-5 p-4 mt-4">
           <p class="fw-lighter">Banco Ficticio S/A - CNPJ 00.000.000/0000-00 <br> Rua Infinita, 000, Brasília-DF, Brasil - CEP 00000-000</p>
         </div>
       </section>
