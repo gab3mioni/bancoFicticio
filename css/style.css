@@ -1,3 +1,24 @@
+.text-blue {
+    color: var(--azul) !important;
+}
+
+.bg-yellow {
+    background-color: var(--amarelo);
+}
+
+.btn-outline-yellow {
+    background-color: var(--amarelo);
+}
+
+.btn-outline-yellow:hover {
+    background-color: var(--amarelo);
+    color: var(--azul);
+}
+
 .bg-pink {
-    background-color: #f78da7;
+    background-color: var(--rosa-claro);
+}
+
+.bg-gray {
+    background-color: var(--cinza-claro);
 }
