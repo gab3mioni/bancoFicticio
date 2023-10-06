@@ -1,18 +1,17 @@
+/* cor dos textos */
+
 .text-blue {
     color: var(--azul) !important;
 }
 
+.text-yellow {
+    color: var(--amarelo) !important;
+}
+
+/* bg color */
+
 .bg-yellow {
     background-color: var(--amarelo);
-}
-
-.btn-outline-yellow {
-    background-color: var(--amarelo);
-}
-
-.btn-outline-yellow:hover {
-    background-color: var(--amarelo);
-    color: var(--azul);
 }
 
 .bg-pink {
@@ -21,4 +20,22 @@
 
 .bg-gray {
     background-color: var(--cinza-claro);
+}
+
+/* botões personalizados */
+
+.btn-outline-yellow {
+    background-color: var(--amarelo);
+}
+
+.btn-outline-yellow:hover {
+    background-color: var(--amarelo-secundario);
+}
+
+.btn-blue {
+    background-color: var(--azul);
+}
+
+.btn-blue:hover {
+    background-color: var(--azul);
 }
