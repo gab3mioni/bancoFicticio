@@ -24,12 +24,12 @@
 
 /* botões personalizados */
 
-.btn-outline-yellow {
+.btn-yellow {
     background-color: var(--amarelo);
 }
 
-.btn-outline-yellow:hover {
-    background-color: var(--amarelo-secundario);
+.btn-yellow:hover {
+    background-color: var(--amarelo);
 }
 
 .btn-blue {

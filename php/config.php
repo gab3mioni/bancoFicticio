@@ -3,8 +3,6 @@
 $dbHost = 'localhost';
 $dbUsername = 'root';
 $dbPassword = '';
-$dbName = 'bancoLoreninter';
 
-$conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
-
+    $conexao = new PDO("mysql:host=$dbHost;dbname=bancoloreninter", $dbUsername, $dbPassword);
 ?>

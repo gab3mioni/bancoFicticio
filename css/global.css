@@ -2,8 +2,13 @@
     --rosa-claro: #f78da7;
     --cinza-claro: #f3efef;
     --amarelo: #fcfc30;
-    --amarelo-secundario: #adad14;
+    --amarelo-escuro: #adad14;
     --azul: #465eff;
+}
+
+@font-face {
+    font-family: SF PRO Display;
+    src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
 }
 
 * {
