@@ -35,18 +35,20 @@ if(isset($_POST['submit']))
 
     <title>Cadastro Enviado</title>
 </head>
+
 <body>
 
     <div class="container">
         <div class="row">
-            <div class=" col-12 p-4 mt-5">
-                <div class="d-block text-center text-blue fw-bolder">
 
-                <h2>Cadastro Enviado</h2>
+            <div class=" col-12 p-4 my-5">
+                <div class="text-center text-blue fw-bolder">
 
-                <p>Suas informações foram enviadas para análise e serão validadas em até 48 horas úteis.</p>
+                <h2>CADASTRO ENVIADO</h2>
 
-                <div class="mt-5 mb-5">
+                <p class="my-4">Suas informações foram enviadas para análise e serão validadas em até 48 horas úteis.</p>
+
+                <div class="mt-5">
                     <a href="../index.html" class="text-decoration-none text-blue fw-bolder">VOLTAR</a>
                 </div>
             </div>
@@ -54,22 +56,105 @@ if(isset($_POST['submit']))
         </div>
     </div>
 
-    <footer class="bg-yellow sticky-bottom">
-        <section class="container">
-            <div class="row">
-
-          <div class="col-6 p-4">
-            <p class="fw-medium text-blue">Banco Loreninter S/A - CNPJ 00.000.000/0000-00 <br> Rua Infinita, 000, Brasília-DF, Brasil - CEP 00000-000</p>
-          </div>
-
-          <div class="col-6 p-4">
-            <div class="fw-medium text-blue">
-                <p>SAC 0800-000-000<br>
-                    Atendimento ao Cliente 0800-000-000</p>
+    <aside>
+        <div class="col-12 p-4 bg-yellow">
+            <div class="d-block text-center text-blue fw-bolder">
+                <h2>OUTROS SERVIÇOS DO LORENINTER</h2>
             </div>
-          </div>
         </div>
-        </section>
+
+        <div class="container">
+            <div class="row">
+                
+            <div class="col-6 p-4 mt-4">
+                <div class="text-blue fw-bold">
+                    <h2 class="h5">CARTÕES ADICIONAIS</h2>
+                </div>
+
+                <div class="fw-medium">
+                    <p>Você pode solicitar até 6 cartões de crédito adicionais sem custo (cobrança apenas para 2ª via de qualquer adicional).</p>
+                </div>
+            </div>
+
+            <div class="col-6 p-4 mt-4">
+                <div class="text-blue fw-bold">
+                    <h2 class="h5">SUA VIAGEM EM OUTRO NÍVEL</h2>
+                </div>
+
+                <div class=" fw-medium">
+                    <p>Aceso ilimitado à sala VIP Loren Black em Guarulhos e 4 acessos/ano a salas LoungeKey e Z Premium  (compartilhados entre cartão titular e adicionais).</p>
+                </div>
+            </div>
+
+            <div class="col-6 p-4 mt-4">
+                <div class="text-blue fw-bold">
+                    <h2 class="h5">CONTA EM DÓLAR E EURO</h2>
+                </div>
+
+                <div class=" fw-medium">
+                    <p>Clientes Loreninter podem comprar, sacar e transferir em dólar e euro.</p>
+                </div>
+            </div>
+
+            <div class="col-6 p-4 mt-4">
+                <div class="text-blue fw-bold">
+                    <h2 class="h5">CARTEIRAS DIGITAIS</h2>
+                </div>
+
+                <div class=" fw-medium">
+                    <p>Compatível com Apple Pay, Carteira do Google e Samsung Wallet.</p>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+
+    </aside>
+
+    <footer>
+
+        <div class="bg-gray">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-md-4 text-center text-md-start p-4">
+                        <div class="fw-medium text-blue">
+                            <p>Atendimento ao Cliente <br> 0800 000 000</p>
+                            <p>Deficientes Auditivos/Fala <br> 0800 000 000</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center text-md-start p-4">
+                        <div class="fw-medium text-blue">
+                            <p>SAC <br> 0800 000 000</p>
+                            <p>WhatsApp <br> 00 0000 0000</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center text-md-start p-4">
+                        <div class="fw-medium text-blue">
+                            <p>Ouvidoria LorenInter <br> 0800 000 000</p>
+                            <p>Central de Relacionamentos <br> 0000 0000 / 00 0000 0000</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-yellow">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-12 text-center text-md-start p-4">
+                        <div class="fw-medium text-blue">
+                            <p>Banco Loreninter S/A - CNPJ 00.000.000/0000-00 <br> Rua Infinita, 000, Brasília-DF, Brasil - CEP 00000-000</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
       </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
