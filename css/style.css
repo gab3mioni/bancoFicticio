@@ -26,6 +26,7 @@
 
 .btn-yellow {
     background-color: var(--amarelo);
+    transition-duration: 0.7s;
 }
 
 .btn-yellow:hover {
