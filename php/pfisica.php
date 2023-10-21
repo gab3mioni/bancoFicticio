@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 if (isset($_POST['login'])) {
@@ -8,10 +7,12 @@ if (isset($_POST['login'])) {
 
     require('auth.php'); // Inclui o arquivo auth.php
 
-    if (verificarCredenciais($cpf, $senha)) {
-        // As credenciais são corretas, o usuário está autenticado
-        $_SESSION['cpf'] = $cpf; // Armazena o CPF na sessão
-        header('Location: ../html/dfisica.html'); // Redireciona para o dashboard de pessoa física
+    $idclientes = obterIdClientesPorCredenciais($cpf, $senha);
+
+    if ($idclientes !== false) {
+        // Credenciais são corretas, o usuário está autenticado
+        $_SESSION['idclientes'] = $idclientes; // Armazena o idclientes na sessão
+        header('Location: ../php/dfisica.php'); // Redireciona para o dashboard de pessoa física
         exit();
     } else {
         // Credenciais incorretas
@@ -19,6 +20,7 @@ if (isset($_POST['login'])) {
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
