@@ -5,14 +5,14 @@ if (isset($_POST['login'])) {
     $cpf = $_POST['cpf']; // Obtém o CPF do formulário
     $senha = $_POST['senha']; // Obtém a senha do formulário
 
-    require('auth.php'); // Inclui o arquivo auth.php
+    require('../auth/auth.php'); // Inclui o arquivo auth.php
 
     $idclientes = obterIdClientesPorCredenciais($cpf, $senha);
 
     if ($idclientes !== false) {
         // Credenciais são corretas, o usuário está autenticado
         $_SESSION['idclientes'] = $idclientes; // Armazena o idclientes na sessão
-        header('Location: ../php/dfisica.php'); // Redireciona para o dashboard de pessoa física
+        header('Location: dfisica.php'); // Redireciona para o dashboard de pessoa física
         exit();
     } else {
         // Credenciais incorretas
@@ -29,8 +29,8 @@ if (isset($_POST['login'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Entrar como Pessoa Física</title>
 </head>
