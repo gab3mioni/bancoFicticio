@@ -22,6 +22,10 @@
     background-color: var(--cinza-claro);
 }
 
+.bg-dash {
+    background-color: var(--cinza-claro2);
+}
+
 /* botões personalizados */
 
 .btn-yellow {
@@ -30,13 +34,14 @@
 }
 
 .btn-yellow:hover {
-    background-color: var(--amarelo);
+    background-color: var(--amarelo-escuro);
 }
 
 .btn-blue {
     background-color: var(--azul);
+    transition-duration: 0.7s;
 }
 
 .btn-blue:hover {
-    background-color: var(--azul);
+    background-color: var(--azul-escuro);
 }
