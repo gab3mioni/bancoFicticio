@@ -1,6 +1,6 @@
 -- --------------------------------------------------------
 -- Servidor:                     127.0.0.1
--- Versão do servidor:           10.10.2-MariaDB - mariadb.org binary distribution
+-- Versão do servidor:           10.4.28-MariaDB - mariadb.org binary distribution
 -- OS do Servidor:               Win64
 -- HeidiSQL Versão:              12.5.0.6677
 -- --------------------------------------------------------
@@ -15,12 +15,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Copiando estrutura do banco de dados para banco-loreninter
-DROP DATABASE IF EXISTS `banco-loreninter`;
-CREATE DATABASE IF NOT EXISTS `banco-loreninter` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
-USE `banco-loreninter`;
+-- Copiando estrutura do banco de dados para bancoloreninter
+DROP DATABASE IF EXISTS `bancoloreninter`;
+CREATE DATABASE IF NOT EXISTS `bancoloreninter` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
+USE `bancoloreninter`;
 
--- Copiando estrutura para tabela banco-loreninter.aprovacao
+-- Copiando estrutura para tabela bancoloreninter.aprovacao
 DROP TABLE IF EXISTS `aprovacao`;
 CREATE TABLE IF NOT EXISTS `aprovacao` (
   `idaprovacao` int(11) NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `aprovacao` (
 
 -- Exportação de dados foi desmarcado.
 
--- Copiando estrutura para tabela banco-loreninter.clientes
+-- Copiando estrutura para tabela bancoloreninter.clientes
 DROP TABLE IF EXISTS `clientes`;
 CREATE TABLE IF NOT EXISTS `clientes` (
   `idclientes` int(11) NOT NULL,
@@ -44,13 +44,16 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `cpf` varchar(12) NOT NULL,
   `rg` varchar(12) NOT NULL,
   `email` varchar(45) NOT NULL,
-  `password` varchar(45) NOT NULL,
+  `senha` varchar(45) NOT NULL,
+  `saldo` decimal(20,6) NOT NULL,
+  `futuros` decimal(20,6) NOT NULL,
+  `limite` decimal(20,6) NOT NULL,
   PRIMARY KEY (`idclientes`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 -- Exportação de dados foi desmarcado.
 
--- Copiando estrutura para tabela banco-loreninter.funcionarios
+-- Copiando estrutura para tabela bancoloreninter.funcionarios
 DROP TABLE IF EXISTS `funcionarios`;
 CREATE TABLE IF NOT EXISTS `funcionarios` (
   `idfuncionarios` int(11) NOT NULL,
