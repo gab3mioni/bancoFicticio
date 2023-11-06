@@ -1,5 +1,5 @@
 <?php
-include("../auth/config.php");
+include("../php/auth/config.php");
 
 session_start();
 
@@ -34,8 +34,8 @@ if (isset($_SESSION['idclientes'])) {
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/global.css">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Pessoa Física</title>
 </head>
@@ -93,8 +93,8 @@ if (isset($_SESSION['idclientes'])) {
 
                         <div class="col-3">
                             <figure>
-                                <a href="../../index.html">
-                                    <img src="../../img/icons/depositar.svg" width="50" height="50" class="w-100 rounded-circle" alt="depositar">
+                                <a href="../index.html">
+                                    <img src="../img/icons/depositar.svg" width="50" height="50" class="w-100 rounded-circle" alt="depositar">
                                 </a>
                             </figure>
 
@@ -105,8 +105,8 @@ if (isset($_SESSION['idclientes'])) {
                         
                         <div class="col-3">
                             <figure>
-                                <a href="../../index.htm">
-                                    <img src="../../img/icons/transferir.svg" width="50" height="50" class="w-100 rounded-circle" alt="transferir">
+                                <a href="../index.html">
+                                    <img src="../img/icons/transferir.svg" width="50" height="50" class="w-100 rounded-circle" alt="transferir">
                                 </a>
                             </figure>
 
@@ -117,8 +117,8 @@ if (isset($_SESSION['idclientes'])) {
 
                         <div class="col-3">
                             <figure>
-                                <a href="../../index.html">
-                                    <img src="../../img/icons/card.svg" width="50" height="50" class="w-100 rounded-circle" alt="cartoes">
+                                <a href="../index.html">
+                                    <img src="../img/icons/card.svg" width="50" height="50" class="w-100 rounded-circle" alt="cartoes">
                                 </a>
                             </figure>
 
@@ -129,8 +129,8 @@ if (isset($_SESSION['idclientes'])) {
 
                         <div class="col-3">
                             <figure>
-                                <a href="../../index.html">
-                                    <img src="../../img/icons/emprestimo.svg" width="50" height="50" class="w-100 rounded-circle" alt="emprestimo">
+                                <a href="../index.html">
+                                    <img src="../img/icons/emprestimo.svg" width="50" height="50" class="w-100 rounded-circle" alt="emprestimo">
                                 </a>
                             </figure>
 
@@ -150,9 +150,9 @@ if (isset($_SESSION['idclientes'])) {
             <div class="row">
                 <div class="col-12 p-4">
                     <?php if (isset($nome)) { ?>
-                        <h2 class="h4"><?php echo "Limite disponível: " .  $limite ?></h2>
+                        <h2 class="h4 text-blue"><?php echo "Limite disponível: " .  $limite ?></h2>
                     <?php } else { ?>
-                        <p>Não foi possível atualizar seus limite. Tente novamente mais tarde.</p>
+                        <p class="text-blue">Não foi possível atualizar seus limite. Tente novamente mais tarde.</p>
                     <?php } ?>
                 </div>
                 

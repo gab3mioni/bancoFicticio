@@ -3,7 +3,7 @@
 if(isset($_POST['submit']))
 {
 
-    include_once('config.php');
+    include_once('auth/config.php');
 
     $nome = $_POST['nome'];
     $datanasc = $_POST['datanasc'];
