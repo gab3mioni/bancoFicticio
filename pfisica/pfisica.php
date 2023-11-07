@@ -7,7 +7,7 @@ if (isset($_POST['login'])) {
 
     require('../php/auth/auth.php'); // Inclui o arquivo auth.php
 
-    $idclientes = obterIdClientesPorCredenciais($cpf, $senha);
+    $idclientes = verificarCredenciais($cpf, $senha);
 
     if ($idclientes !== false) {
         // Credenciais são corretas, o usuário está autenticado

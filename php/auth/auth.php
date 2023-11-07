@@ -1,6 +1,5 @@
 <?php
-function verificarCredenciais($cpf, $senha) {
-
+function conectarBanco() {
     $dbHost = 'localhost';
     $dbUsername = 'root';
     $dbPassword = '';
@@ -9,35 +8,15 @@ function verificarCredenciais($cpf, $senha) {
     try {
         $conexao = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUsername, $dbPassword);
         $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        $query = "SELECT idclientes FROM clientes WHERE cpf = :cpf AND senha = :senha";
-        $stmt = $conexao->prepare($query);
-        $stmt->bindParam(':cpf', $cpf);
-        $stmt->bindParam(':senha', $senha);
-        $stmt->execute();
-
-        if ($stmt->rowCount() == 1) {
-            // As credenciais são corretas, o usuário está autenticado
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
-            return $row['idclientes']; // Retorna o idclientes
-        } else {
-            // Credenciais incorretas
-            return false;
-        }
+        return $conexao;
     } catch (PDOException $e) {
-        echo "Erro de conexão com o banco de dados: " . $e->getMessage();
-        return false;
+        die("Erro de conexão com o banco de dados: " . $e->getMessage());
     }
 }
-function obterIdClientesPorCredenciais($cpf, $senha) {
-    $dbHost = 'localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'bancoloreninter';
 
+function verificarCredenciais($cpf, $senha) {
     try {
-        $conexao = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUsername, $dbPassword);
-        $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $conexao = conectarBanco();
 
         $query = "SELECT idclientes FROM clientes WHERE cpf = :cpf AND senha = :senha";
         $stmt = $conexao->prepare($query);
@@ -52,20 +31,13 @@ function obterIdClientesPorCredenciais($cpf, $senha) {
             return false;
         }
     } catch (PDOException $e) {
-        echo "Erro de conexão com o banco de dados: " . $e->getMessage();
-        return false;
+        die("Erro ao verificar credenciais: " . $e->getMessage());
     }
 }
 
-function obertSaldo($cpf, $senha) {
-    $dbHost = 'localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'bancoloreninter';
-
+function obterSaldo($cpf, $senha) {
     try {
-        $conexao = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUsername, $dbPassword);
-        $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $conexao = conectarBanco();
 
         $query = "SELECT saldo FROM clientes WHERE cpf = :cpf AND senha = :senha";
         $stmt = $conexao->prepare($query);
@@ -80,8 +52,7 @@ function obertSaldo($cpf, $senha) {
             return false;
         }
     } catch (PDOException $e) {
-        echo "Erro de conexão com o banco de dados: " . $e->getMessage();
-        return false;
+        die("Erro ao obter saldo: " . $e->getMessage());
     }
 }
 
