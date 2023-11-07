@@ -129,13 +129,13 @@ if (isset($_SESSION['idclientes'])) {
 
                         <div class="col-3">
                             <figure>
-                                <a href="../index.html">
+                                <a href="emprestimo/emprestimo.html">
                                     <img src="../img/icons/emprestimo.svg" width="50" height="50" class="w-100 rounded-circle" alt="emprestimo">
                                 </a>
                             </figure>
 
                             <div class="text-center">
-                                <a class="text-decoration-none text-dark" href="../../index.html">Empréstimo</a>
+                                <a class="text-decoration-none text-dark" href="emprestimo/emprestimo.html">Empréstimo</a>
                             </div>
                         </div>
 
