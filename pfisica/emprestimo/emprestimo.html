@@ -29,13 +29,13 @@
                     <form id="formulario">
 
                         <div class="my-2">
-                            Prazo (em meses)<input type="number" id="prazo-emp" class="form-control" required>
-                        </div>
-    
-                        <div class="my-2">
                             Valor do Empréstimo<input type="number" id="valor-emp" class="form-control" required>
                         </div>
-    
+
+                        <div class="my-2">
+                            Prazo (em meses)<input type="number" id="prazo-emp" class="form-control" required>
+                        </div>
+
                         <div class="d-grid gap-2 col-6 mx-auto">
                             <button type="submit" class="btn btn-primary">Calcular</button>
                         </div>
@@ -49,8 +49,13 @@
 
                     <p id="pagamento">Sua parcela mensal será exibida <strong>aqui.</strong></p>
                 </div>
+
+
+                <div id="realizar-emprestimo" class="d-none d-grid gap-2 col-2 mx-auto">
+                    <button type="submit" class="btn btn-success">Realizar Empréstimo</button>
+                </div>
             </div>
-            
+
         </div>
     </div>
 
