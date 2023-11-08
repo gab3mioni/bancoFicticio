@@ -21,30 +21,36 @@
             <div class="col-12 p-5">
                 <div class="text-center">
                     <h1 class="display-4 h4 text-blue">Simular Empréstimo</h1>
+                </div>
+            </div>
 
+            <div class="col-12">
+                <div class="d-flex justify-content-center align-items-center text-center">
                     <form id="formulario">
-                        <div class="form-group">
-                            <label for="valor-emp">Valor do Empréstimo</label>
-                            <input type="number" id="valor-emp" class="form-control" required>
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="prazo-emp">Prazo (em meses)</label>
-                            <input type="number" id="prazo-emp" class="form-control" required>
-                        </div>
 
-                        <div class="mt-4">
+                        <div class="my-2">
+                            Prazo (em meses)<input type="number" id="prazo-emp" class="form-control" required>
+                        </div>
+    
+                        <div class="my-2">
+                            Valor do Empréstimo<input type="number" id="valor-emp" class="form-control" required>
+                        </div>
+    
+                        <div class="d-grid gap-2 col-6 mx-auto">
                             <button type="submit" class="btn btn-primary">Calcular</button>
                         </div>
                     </form>
-
-                    <div class="my-4">
-                        <h3>Resultado:</h3>
-                        <p id="pagamento">Sua parcela mensal será exibida aqui.</p>
-                    </div>
-
                 </div>
             </div>
+
+            <div class="col-12 p-5">
+                <div class="text-center">
+                    <h3>Resultado</h3>
+
+                    <p id="pagamento">Sua parcela mensal será exibida <strong>aqui.</strong></p>
+                </div>
+            </div>
+            
         </div>
     </div>
 
