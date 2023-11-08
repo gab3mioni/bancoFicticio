@@ -8,10 +8,13 @@
 }
 
 @font-face {
-    font-family: SF PRO Display;
-    src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+    font-family: 'SF PRO Display';
+    src: url('../fonts/SFPRODISPLAYREGULAR.woff2') format('woff2'),
+         url('../fonts/SFPRODISPLAYREGULAR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-    font-family: SF PRO Display;
+    font-family: 'SF PRO Display', sans-serif;
 }

@@ -1,4 +1,4 @@
-/* cor dos textos */
+/* Textos coloridos personalizados */
 
 .text-blue {
     color: var(--azul) !important;
@@ -8,7 +8,7 @@
     color: var(--amarelo) !important;
 }
 
-/* bg color */
+/* Cores de fundo personalizadas */
 
 .bg-yellow {
     background-color: var(--amarelo);
@@ -26,7 +26,7 @@
     background-color: var(--cinza-claro2);
 }
 
-/* botões personalizados */
+/* Botões com cores personalizadas */
 
 .btn-yellow {
     background-color: var(--amarelo);
