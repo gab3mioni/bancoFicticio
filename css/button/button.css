@@ -1,0 +1,19 @@
+/* Botões com cores personalizadas */
+
+.btn-yellow {
+    background-color: var(--amarelo);
+    transition-duration: 0.7s;
+}
+
+.btn-yellow:hover {
+    background-color: var(--amarelo-escuro);
+}
+
+.btn-blue {
+    background-color: var(--azul);
+    transition-duration: 0.7s;
+}
+
+.btn-blue:hover {
+    background-color: var(--azul-escuro);
+}

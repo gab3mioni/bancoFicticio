@@ -1,0 +1,17 @@
+/* Cores de fundo personalizadas */
+
+.bg-yellow {
+    background-color: var(--amarelo);
+}
+
+.bg-pink {
+    background-color: var(--rosa-claro);
+}
+
+.bg-gray {
+    background-color: var(--cinza-claro);
+}
+
+.bg-dash {
+    background-color: var(--cinza-claro2);
+}

@@ -1,47 +1,20 @@
-/* Textos coloridos personalizados */
-
-.text-blue {
-    color: var(--azul) !important;
+:root {
+    --rosa-claro: #f78da7;
+    --cinza-claro: #F7F8F9;
+    --amarelo: #fcfc30;
+    --amarelo-escuro: #adad14;
+    --azul: #465eff;
+    --azul-escuro: #1d38e2;
 }
 
-.text-yellow {
-    color: var(--amarelo) !important;
+@font-face {
+    font-family: 'SF PRO Display';
+    src: url('../fonts/SFPRODISPLAYREGULAR.woff2') format('woff2'),
+         url('../fonts/SFPRODISPLAYREGULAR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* Cores de fundo personalizadas */
-
-.bg-yellow {
-    background-color: var(--amarelo);
-}
-
-.bg-pink {
-    background-color: var(--rosa-claro);
-}
-
-.bg-gray {
-    background-color: var(--cinza-claro);
-}
-
-.bg-dash {
-    background-color: var(--cinza-claro2);
-}
-
-/* Botões com cores personalizadas */
-
-.btn-yellow {
-    background-color: var(--amarelo);
-    transition-duration: 0.7s;
-}
-
-.btn-yellow:hover {
-    background-color: var(--amarelo-escuro);
-}
-
-.btn-blue {
-    background-color: var(--azul);
-    transition-duration: 0.7s;
-}
-
-.btn-blue:hover {
-    background-color: var(--azul-escuro);
+* {
+    font-family: 'SF PRO Display', sans-serif;
 }

@@ -1,0 +1,9 @@
+/* Textos coloridos personalizados */
+
+.text-blue {
+    color: var(--azul) !important;
+}
+
+.text-yellow {
+    color: var(--amarelo) !important;
+}
